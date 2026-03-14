@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { loginAction } from "../actions";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,13 @@ import { Separator } from "@/components/ui/separator";
 import { Loader2, Mail, Lock, ArrowRight } from "lucide-react";
 
 export default function LoginPage() {
-  const [error, setError] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  const urlError = searchParams.get("error");
+  const [error, setError] = useState<string | null>(
+    urlError === "email_confirmation_failed"
+      ? "Email confirmation failed. Please try signing up again."
+      : null
+  );
   const [isPending, startTransition] = useTransition();
 
   async function handleSubmit(formData: FormData) {
