@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CalSync — Schedule meetings without the back-and-forth",
+  title: "Calslot — Schedule meetings without the back-and-forth",
   description:
     "A Calendly alternative for easy appointment booking. Set your availability, share your link, and let people book time with you.",
 };

@@ -1,10 +1,10 @@
-# CalSync — A Calendly Alternative
+# Calslot — A Calendly Alternative
 
 An appointment booking system for service businesses with Google Calendar integration, built with Next.js, Supabase, and Tailwind CSS.
 
 ## What It Does
 
-CalSync lets hosts create event types, set weekly availability, and share a public booking link. Guests can book appointments without creating an account. Bookings automatically sync to the host's Google Calendar, and existing calendar events are checked to prevent double-booking.
+Calslot lets hosts create event types, set weekly availability, and share a public booking link. Guests can book appointments without creating an account. Bookings automatically sync to the host's Google Calendar, and existing calendar events are checked to prevent double-booking.
 
 ## Key Features
 
@@ -53,4 +53,4 @@ See `.env.local.example` for all required variables.
 
 ## Alternative To
 
-**Calendly** — CalSync provides the core scheduling functionality of Calendly: shareable booking links, availability management, and calendar integration, built as an open-source alternative.
+**Calendly** — Calslot provides the core scheduling functionality of Calendly: shareable booking links, availability management, and calendar integration, built as an open-source alternative.

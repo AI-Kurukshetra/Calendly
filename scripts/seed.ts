@@ -148,7 +148,7 @@ function makeTimestamptz(dateStr: string, time: string): string {
 }
 
 async function seed() {
-  console.log("Starting CalSync seed...\n");
+  console.log("Starting Calslot seed...\n");
 
   // Step 1: Create auth users (the trigger auto-creates profiles)
   const userIds: Record<string, string> = {};

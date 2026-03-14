@@ -114,7 +114,7 @@ export default async function PublicProfilePage({
             <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary text-primary-foreground">
               <User className="h-3 w-3" />
             </div>
-            <span>Powered by <span className="font-semibold text-foreground">CalSync</span></span>
+            <span>Powered by <span className="font-semibold text-foreground">Calslot</span></span>
           </div>
         </div>
       </div>

@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
       `Email: ${booking.guest_email}`,
       booking.notes ? `Notes: ${booking.notes}` : "",
       "",
-      "Booked via CalSync",
+      "Booked via Calslot",
     ].filter(Boolean);
 
     const eventId = await createCalendarEvent(accessToken, {

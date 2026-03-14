@@ -75,7 +75,7 @@ export default function Sidebar({ profile }: { profile: Profile }) {
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
               <Calendar className="h-4.5 w-4.5" />
             </div>
-            <span className="text-xl font-bold tracking-tight">CalSync</span>
+            <span className="text-xl font-bold tracking-tight">Calslot</span>
           </Link>
           <button
             onClick={() => setMobileOpen(false)}

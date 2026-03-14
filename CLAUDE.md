@@ -1,5 +1,5 @@
 # Project Rules — AI Kurukshetra Hackathon
-# Product: CalSync — A Calendly Alternative
+# Product: Calslot — A Calendly Alternative
 # Appointment booking system for service businesses with reminders
 
 ## Stack (Non-Negotiable)
@@ -11,7 +11,7 @@
 - **Drag/Drop or Calendar UI**: react-big-calendar or @fullcalendar/react (pick one)
 
 ## Product Definition
-CalSync is a Calendly alternative — an appointment booking system where:
+Calslot is a Calendly alternative — an appointment booking system where:
 - **Hosts** set their availability and create event types
 - **Guests** book appointments via a public shareable link (no login required)
 - **Dashboard** shows upcoming bookings, past bookings, and analytics

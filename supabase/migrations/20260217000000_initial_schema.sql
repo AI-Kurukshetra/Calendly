@@ -1,5 +1,5 @@
 -- =============================================
--- CalSync Initial Schema Migration
+-- Calslot Initial Schema Migration
 -- Tables: profiles, event_types, availability, bookings
 -- Includes RLS policies and auth trigger
 -- =============================================

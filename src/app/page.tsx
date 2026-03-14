@@ -66,7 +66,7 @@ export default function LandingPage() {
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
               <Calendar className="h-4.5 w-4.5" />
             </div>
-            <span className="text-xl font-bold tracking-tight">CalSync</span>
+            <span className="text-xl font-bold tracking-tight">Calslot</span>
           </Link>
           <div className="flex items-center gap-3">
             <Link href="/login">
@@ -97,7 +97,7 @@ export default function LandingPage() {
               <span className="text-primary">without the back-and-forth</span>
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              CalSync makes scheduling effortless. Set your availability, share your
+              Calslot makes scheduling effortless. Set your availability, share your
               link, and let people book time with you — no account needed for guests.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -210,7 +210,7 @@ export default function LandingPage() {
             Ready to simplify your scheduling?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Join thousands of professionals who save hours every week with CalSync.
+            Join thousands of professionals who save hours every week with Calslot.
           </p>
           <div className="mt-8">
             <Link href="/signup">
@@ -234,7 +234,7 @@ export default function LandingPage() {
               <div className="flex h-7 w-7 items-center justify-center rounded-md bg-primary text-primary-foreground">
                 <Calendar className="h-3.5 w-3.5" />
               </div>
-              <span className="font-semibold">CalSync</span>
+              <span className="font-semibold">Calslot</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Built for the AI Kurukshetra Hackathon

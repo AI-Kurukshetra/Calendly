@@ -1,5 +1,5 @@
 // ============================================
-// CalSync — TypeScript Interfaces
+// Calslot — TypeScript Interfaces
 // ============================================
 
 export interface Profile {

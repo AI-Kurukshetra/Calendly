@@ -1,7 +1,7 @@
-# CalSync — Architecture Plan
+# Calslot — Architecture Plan
 
 ## Product Overview
-CalSync is a Calendly alternative — an appointment booking system where hosts set their availability, create event types, and guests book meetings via a public shareable link (no login required).
+Calslot is a Calendly alternative — an appointment booking system where hosts set their availability, create event types, and guests book meetings via a public shareable link (no login required).
 
 ---
 
@@ -146,7 +146,7 @@ CalSync is a Calendly alternative — an appointment booking system where hosts 
 / (Landing Page - Server Component)
 ├── Layout: RootLayout (Inter font, Toaster)
 │
-├── /(auth)/ (Auth Layout - centered, CalSync branding)
+├── /(auth)/ (Auth Layout - centered, Calslot branding)
 │   ├── /login .......... LoginPage (Client) -> loginAction
 │   └── /signup ......... SignupPage (Client) -> signupAction
 │
@@ -450,7 +450,7 @@ scripts/
 supabase/
 └── schema.sql                     # Full database schema + RLS
 
-CalSync/
+Calslot/
 └── ARCHITECTURE.md                # This file
 ```
 
@@ -543,7 +543,7 @@ Click "Connect"
 ```
 Guest picks a date on booking page
       │
-      ├──> Fetch CalSync bookings for that date (Supabase)
+      ├──> Fetch Calslot bookings for that date (Supabase)
       │
       ├──> GET /api/google/busy-times?hostId=...&date=...
       │         │

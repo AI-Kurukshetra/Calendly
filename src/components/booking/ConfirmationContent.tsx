@@ -169,7 +169,7 @@ export default function ConfirmationContent() {
             </div>
             <span>
               Powered by{" "}
-              <span className="font-semibold text-foreground">CalSync</span>
+              <span className="font-semibold text-foreground">Calslot</span>
             </span>
           </div>
         </div>

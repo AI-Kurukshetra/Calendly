@@ -29,7 +29,7 @@ export default function AuthLayout({
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/20 backdrop-blur-sm">
               <Calendar className="h-6 w-6" />
             </div>
-            <span className="text-2xl font-bold tracking-tight">CalSync</span>
+            <span className="text-2xl font-bold tracking-tight">Calslot</span>
           </Link>
 
           {/* Hero text */}
@@ -95,14 +95,14 @@ export default function AuthLayout({
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-primary-foreground">
               <Calendar className="h-5 w-5" />
             </div>
-            <span className="text-2xl font-bold tracking-tight">CalSync</span>
+            <span className="text-2xl font-bold tracking-tight">Calslot</span>
           </Link>
         </div>
 
         <div className="w-full max-w-[420px]">{children}</div>
 
         <p className="mt-8 text-xs text-muted-foreground text-center">
-          By continuing, you agree to CalSync&apos;s Terms of Service
+          By continuing, you agree to Calslot&apos;s Terms of Service
           <br />
           and Privacy Policy.
         </p>
