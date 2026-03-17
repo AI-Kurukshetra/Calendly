@@ -135,6 +135,30 @@ export default function LandingPage() {
               </span>
             </div>
           </div>
+
+          {/* Demo Video */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="rounded-2xl border bg-card shadow-2xl shadow-primary/10 overflow-hidden">
+              <video
+                className="w-full"
+                controls
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster=""
+              >
+                <source
+                  src="https://calslot.s3.ap-south-1.amazonaws.com/output_final.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <p className="text-center text-sm text-muted-foreground mt-4">
+              See how easy it is to schedule with Calslot
+            </p>
+          </div>
         </div>
       </section>
 
