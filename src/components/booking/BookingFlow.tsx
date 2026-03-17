@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { createClient } from "@/lib/supabase/client";
+
 import DatePicker from "./DatePicker";
 import TimeSlotGrid from "./TimeSlotGrid";
 import BookingForm from "./BookingForm";
@@ -84,12 +84,12 @@ export default function BookingFlow({
 
     setSubmitting(true);
     try {
-      const supabase = createClient();
       const bookingDate = selectedDate.toISOString().split("T")[0];
 
-      const { data: booking, error } = await supabase
-        .from("bookings")
-        .insert({
+      const res = await fetch("/api/bookings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
           event_type_id: eventType.id,
           host_id: profile.id,
           guest_name: data.guest_name,
@@ -97,13 +97,13 @@ export default function BookingFlow({
           booking_date: bookingDate,
           start_time: selectedSlot.start,
           end_time: selectedSlot.end,
-          status: "confirmed",
           notes: data.notes || null,
-        })
-        .select("id")
-        .single();
+        }),
+      });
 
-      if (error) {
+      const booking = await res.json();
+
+      if (!res.ok) {
         toast.error("Failed to create booking. Please try again.");
         setSubmitting(false);
         return;

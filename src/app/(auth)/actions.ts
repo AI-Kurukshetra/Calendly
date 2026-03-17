@@ -62,7 +62,7 @@ export async function signupAction(formData: FormData) {
     return { error: "This username is already taken." };
   }
 
-  const { data, error } = await supabase.auth.signUp({
+  const { error } = await supabase.auth.signUp({
     email,
     password,
     options: {
@@ -75,12 +75,6 @@ export async function signupAction(formData: FormData) {
 
   if (error) {
     return { error: error.message };
-  }
-
-  // If email confirmation is required, session will be null
-  // Redirect to a page telling the user to check their email
-  if (!data.session) {
-    redirect("/signup/confirm-email");
   }
 
   revalidatePath("/", "layout");
